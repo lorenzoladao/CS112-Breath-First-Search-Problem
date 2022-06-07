@@ -21,10 +21,6 @@ public class Friends {
 	 */
 	public static ArrayList<String> shortestChain(Graph g, String p1, String p2) {
 		
-		/** COMPLETE THIS METHOD **/
-		
-		// FOLLOWING LINE IS A PLACEHOLDER TO MAKE COMPILER HAPPY
-		// CHANGE AS REQUIRED FOR YOUR IMPLEMENTATION
 		ArrayList<String> chain = new ArrayList<String>();
 		if(!g.map.containsKey(p1)) return null;
 		if(!g.map.containsKey(p2)) return null;
@@ -92,10 +88,6 @@ public class Friends {
 	
 	public static ArrayList<ArrayList<String>> cliques(Graph g, String school) {
 		
-		/** COMPLETE THIS METHOD **/
-		
-		// FOLLOWING LINE IS A PLACEHOLDER TO MAKE COMPILER HAPPY
-		// CHANGE AS REQUIRED FOR YOUR IMPLEMENTATION
 		ArrayList<ArrayList<String>> cliques = new ArrayList<ArrayList<String>>();
 		Queue<Integer> num = new Queue<Integer>();
 		boolean[] v = new boolean[g.map.size()];
@@ -160,11 +152,6 @@ public class Friends {
 	 * @return Names of all connectors. Null or empty array list if there are no connectors.
 	 */
 	public static ArrayList<String> connectors(Graph g) {
-		
-		/** COMPLETE THIS METHOD **/
-		
-		// FOLLOWING LINE IS A PLACEHOLDER TO MAKE COMPILER HAPPY
-		// CHANGE AS REQUIRED FOR YOUR IMPLEMENTATION
 		
 		if(g.members[0] == null) return null;
 		
@@ -273,12 +260,6 @@ public class Friends {
 				}
 			}
 		}
-//		Person curr = g.members[0];
-//		Friend ptr = curr.first;
-		
-		
-		
-		
 		return connectors;
 		
 	}
